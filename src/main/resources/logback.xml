@@ -2,7 +2,7 @@
   @Author: chenzhiyuan
   @Date:   2019-12-06 21:36:40
   @Last Modified by:   chenzhiyuan
-  @Last Modified time: 2019-12-06 21:36:41
+  @Last Modified time: 2019-12-06 21:40:29
 -->
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
@@ -30,7 +30,8 @@
 			<charset class="java.nio.charset.Charset">UTF-8</charset>
 		</encoder>
 	</appender>
-
+<!-- -Dlog.root.level=INFO -->
+<!-- 日志级别排序为： TRACE < DEBUG < INFO < WARN < ERROR -->
 	<root level="${log.root.level}">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="FILE" />
